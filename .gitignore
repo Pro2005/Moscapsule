@@ -9,6 +9,9 @@ Pods/
 # Mosquitto
 mosquitto/*
 !mosquitto/lib/
+!mosquitto/deps/
+!mosquitto/include/
+!mosquitto/config.h
 mosquitto/lib/*/
 mosquitto/lib/CMakeLists.txt
 mosquitto/lib/Makefile

@@ -326,7 +326,7 @@ public final class MQTT {
 										  options.reconnect_delay_max_s,
 										  options.reconnect_exponential_backoff)
 		} else {
-			mosquitto_reconnect_disable(mosquittoContext.mosquittoHandler)
+//			mosquitto_reconnect_disable(mosquittoContext.mosquittoHandler)
 		}
 		
         // set MQTT Will Options

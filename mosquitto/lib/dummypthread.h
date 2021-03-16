@@ -1,9 +1,10 @@
-#ifndef _DUMMYPTHREAD_H_
-#define _DUMMYPTHREAD_H_
+#ifndef DUMMYPTHREAD_H
+#define DUMMYPTHREAD_H
 
 #define pthread_create(A, B, C, D)
 #define pthread_join(A, B)
 #define pthread_cancel(A)
+#define pthread_testcancel()
 
 #define pthread_mutex_init(A, B)
 #define pthread_mutex_destroy(A)

@@ -7,6 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08AD167A2600759800CD5B14 /* handle_auth.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16582600759800CD5B14 /* handle_auth.c */; };
+		08AD167B2600759800CD5B14 /* handle_connack.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16592600759800CD5B14 /* handle_connack.c */; };
+		08AD167C2600759800CD5B14 /* connect.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD165A2600759800CD5B14 /* connect.c */; };
+		08AD167D2600759800CD5B14 /* handle_pubrel.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD165B2600759800CD5B14 /* handle_pubrel.c */; };
+		08AD167E2600759800CD5B14 /* property_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AD165C2600759800CD5B14 /* property_mosq.h */; };
+		08AD167F2600759800CD5B14 /* handle_unsuback.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD165D2600759800CD5B14 /* handle_unsuback.c */; };
+		08AD16802600759800CD5B14 /* send_subscribe.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD165E2600759800CD5B14 /* send_subscribe.c */; };
+		08AD16812600759800CD5B14 /* net_mosq_ocsp.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD165F2600759800CD5B14 /* net_mosq_ocsp.c */; };
+		08AD16822600759800CD5B14 /* util_topic.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16602600759800CD5B14 /* util_topic.c */; };
+		08AD16832600759800CD5B14 /* helpers.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16612600759800CD5B14 /* helpers.c */; };
+		08AD16842600759800CD5B14 /* send_publish.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16622600759800CD5B14 /* send_publish.c */; };
+		08AD16852600759800CD5B14 /* send_connect.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16632600759800CD5B14 /* send_connect.c */; };
+		08AD16862600759800CD5B14 /* handle_ping.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16642600759800CD5B14 /* handle_ping.c */; };
+		08AD16872600759800CD5B14 /* property_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16652600759800CD5B14 /* property_mosq.c */; };
+		08AD16882600759800CD5B14 /* send_unsubscribe.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16662600759800CD5B14 /* send_unsubscribe.c */; };
+		08AD16892600759800CD5B14 /* loop.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16672600759800CD5B14 /* loop.c */; };
+		08AD168A2600759800CD5B14 /* utf8_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16682600759800CD5B14 /* utf8_mosq.c */; };
+		08AD168B2600759800CD5B14 /* alias_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16692600759800CD5B14 /* alias_mosq.c */; };
+		08AD168C2600759800CD5B14 /* options.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD166A2600759800CD5B14 /* options.c */; };
+		08AD168D2600759800CD5B14 /* packet_datatypes.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD166B2600759800CD5B14 /* packet_datatypes.c */; };
+		08AD168E2600759800CD5B14 /* handle_publish.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD166C2600759800CD5B14 /* handle_publish.c */; };
+		08AD168F2600759800CD5B14 /* misc_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD166D2600759800CD5B14 /* misc_mosq.c */; };
+		08AD16902600759800CD5B14 /* misc_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AD166E2600759800CD5B14 /* misc_mosq.h */; };
+		08AD16912600759800CD5B14 /* handle_suback.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD166F2600759800CD5B14 /* handle_suback.c */; };
+		08AD16922600759800CD5B14 /* alias_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AD16702600759800CD5B14 /* alias_mosq.h */; };
+		08AD16932600759800CD5B14 /* actions.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16712600759800CD5B14 /* actions.c */; };
+		08AD16942600759800CD5B14 /* handle_pubackcomp.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16722600759800CD5B14 /* handle_pubackcomp.c */; };
+		08AD16952600759800CD5B14 /* packet_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AD16732600759800CD5B14 /* packet_mosq.h */; };
+		08AD16962600759800CD5B14 /* send_disconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16742600759800CD5B14 /* send_disconnect.c */; };
+		08AD16972600759800CD5B14 /* strings_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16752600759800CD5B14 /* strings_mosq.c */; };
+		08AD16982600759800CD5B14 /* handle_pubrec.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16762600759800CD5B14 /* handle_pubrec.c */; };
+		08AD16992600759800CD5B14 /* callbacks.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16772600759800CD5B14 /* callbacks.c */; };
+		08AD169A2600759800CD5B14 /* handle_disconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16782600759800CD5B14 /* handle_disconnect.c */; };
+		08AD169B2600759800CD5B14 /* packet_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD16792600759800CD5B14 /* packet_mosq.c */; };
+		08AD16A4260075E500CD5B14 /* mosquitto_plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AD16A0260075E500CD5B14 /* mosquitto_plugin.h */; };
+		08AD16A5260075E500CD5B14 /* mosquitto.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AD16A1260075E500CD5B14 /* mosquitto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08AD16A6260075E500CD5B14 /* mqtt_protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AD16A2260075E500CD5B14 /* mqtt_protocol.h */; };
+		08AD16A7260075E500CD5B14 /* mosquitto_broker.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AD16A3260075E500CD5B14 /* mosquitto_broker.h */; };
+		08AD16AC2600760100CD5B14 /* uthash.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AD16AA2600760100CD5B14 /* uthash.h */; };
+		08AD16AD2600760100CD5B14 /* utlist.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AD16AB2600760100CD5B14 /* utlist.h */; };
+		08AD16B3260076F700CD5B14 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AD16B2260076F700CD5B14 /* config.h */; };
 		094821041B0E2EB600099178 /* socks_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 094821021B0E2EB600099178 /* socks_mosq.c */; };
 		094821051B0E2EB600099178 /* socks_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 094821031B0E2EB600099178 /* socks_mosq.h */; };
 		09CF6B191A21F78700A97383 /* Moscapsule.h in Headers */ = {isa = PBXBuildFile; fileRef = 09CF6B181A21F78700A97383 /* Moscapsule.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -21,15 +62,10 @@
 		09CF6B551A21F7E600A97383 /* messages_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 09CF6B371A21F7E600A97383 /* messages_mosq.h */; };
 		09CF6B561A21F7E600A97383 /* mosquitto_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 09CF6B381A21F7E600A97383 /* mosquitto_internal.h */; };
 		09CF6B571A21F7E600A97383 /* mosquitto.c in Sources */ = {isa = PBXBuildFile; fileRef = 09CF6B391A21F7E600A97383 /* mosquitto.c */; };
-		09CF6B581A21F7E600A97383 /* mosquitto.h in Headers */ = {isa = PBXBuildFile; fileRef = 09CF6B3A1A21F7E600A97383 /* mosquitto.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09CF6B591A21F7E600A97383 /* mqtt3_protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 09CF6B3B1A21F7E600A97383 /* mqtt3_protocol.h */; };
 		09CF6B5A1A21F7E600A97383 /* net_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 09CF6B3C1A21F7E600A97383 /* net_mosq.c */; };
 		09CF6B5B1A21F7E600A97383 /* net_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 09CF6B3D1A21F7E600A97383 /* net_mosq.h */; };
-		09CF6B5C1A21F7E600A97383 /* read_handle_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 09CF6B3E1A21F7E600A97383 /* read_handle_client.c */; };
-		09CF6B5D1A21F7E600A97383 /* read_handle_shared.c in Sources */ = {isa = PBXBuildFile; fileRef = 09CF6B3F1A21F7E600A97383 /* read_handle_shared.c */; };
 		09CF6B5E1A21F7E600A97383 /* read_handle.c in Sources */ = {isa = PBXBuildFile; fileRef = 09CF6B401A21F7E600A97383 /* read_handle.c */; };
 		09CF6B5F1A21F7E600A97383 /* read_handle.h in Headers */ = {isa = PBXBuildFile; fileRef = 09CF6B411A21F7E600A97383 /* read_handle.h */; };
-		09CF6B601A21F7E600A97383 /* send_client_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 09CF6B421A21F7E600A97383 /* send_client_mosq.c */; };
 		09CF6B611A21F7E600A97383 /* send_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 09CF6B431A21F7E600A97383 /* send_mosq.c */; };
 		09CF6B621A21F7E600A97383 /* send_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 09CF6B441A21F7E600A97383 /* send_mosq.h */; };
 		09CF6B631A21F7E600A97383 /* srv_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 09CF6B451A21F7E600A97383 /* srv_mosq.c */; };
@@ -42,7 +78,6 @@
 		09CF6B6A1A21F7E600A97383 /* util_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 09CF6B4C1A21F7E600A97383 /* util_mosq.h */; };
 		09CF6B6B1A21F7E600A97383 /* will_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 09CF6B4D1A21F7E600A97383 /* will_mosq.c */; };
 		09CF6B6C1A21F7E600A97383 /* will_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 09CF6B4E1A21F7E600A97383 /* will_mosq.h */; };
-		09CF6B6E1A21F82600A97383 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 09CF6B6D1A21F82600A97383 /* config.h */; };
 		09CF6B701A21F88000A97383 /* Moscapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CF6B6F1A21F88000A97383 /* Moscapsule.swift */; };
 		09FB79171BB6FA4100B22BAA /* cert.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 09FB79161BB6FA4100B22BAA /* cert.bundle */; };
 		C7360CC31A2435A8001F490F /* MosquittoCallbackBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = C7360CC21A2435A8001F490F /* MosquittoCallbackBridge.m */; };
@@ -60,6 +95,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08AD16582600759800CD5B14 /* handle_auth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = handle_auth.c; path = mosquitto/lib/handle_auth.c; sourceTree = "<group>"; };
+		08AD16592600759800CD5B14 /* handle_connack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = handle_connack.c; path = mosquitto/lib/handle_connack.c; sourceTree = "<group>"; };
+		08AD165A2600759800CD5B14 /* connect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = connect.c; path = mosquitto/lib/connect.c; sourceTree = "<group>"; };
+		08AD165B2600759800CD5B14 /* handle_pubrel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = handle_pubrel.c; path = mosquitto/lib/handle_pubrel.c; sourceTree = "<group>"; };
+		08AD165C2600759800CD5B14 /* property_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = property_mosq.h; path = mosquitto/lib/property_mosq.h; sourceTree = "<group>"; };
+		08AD165D2600759800CD5B14 /* handle_unsuback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = handle_unsuback.c; path = mosquitto/lib/handle_unsuback.c; sourceTree = "<group>"; };
+		08AD165E2600759800CD5B14 /* send_subscribe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = send_subscribe.c; path = mosquitto/lib/send_subscribe.c; sourceTree = "<group>"; };
+		08AD165F2600759800CD5B14 /* net_mosq_ocsp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = net_mosq_ocsp.c; path = mosquitto/lib/net_mosq_ocsp.c; sourceTree = "<group>"; };
+		08AD16602600759800CD5B14 /* util_topic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = util_topic.c; path = mosquitto/lib/util_topic.c; sourceTree = "<group>"; };
+		08AD16612600759800CD5B14 /* helpers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = helpers.c; path = mosquitto/lib/helpers.c; sourceTree = "<group>"; };
+		08AD16622600759800CD5B14 /* send_publish.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = send_publish.c; path = mosquitto/lib/send_publish.c; sourceTree = "<group>"; };
+		08AD16632600759800CD5B14 /* send_connect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = send_connect.c; path = mosquitto/lib/send_connect.c; sourceTree = "<group>"; };
+		08AD16642600759800CD5B14 /* handle_ping.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = handle_ping.c; path = mosquitto/lib/handle_ping.c; sourceTree = "<group>"; };
+		08AD16652600759800CD5B14 /* property_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = property_mosq.c; path = mosquitto/lib/property_mosq.c; sourceTree = "<group>"; };
+		08AD16662600759800CD5B14 /* send_unsubscribe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = send_unsubscribe.c; path = mosquitto/lib/send_unsubscribe.c; sourceTree = "<group>"; };
+		08AD16672600759800CD5B14 /* loop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = loop.c; path = mosquitto/lib/loop.c; sourceTree = "<group>"; };
+		08AD16682600759800CD5B14 /* utf8_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = utf8_mosq.c; path = mosquitto/lib/utf8_mosq.c; sourceTree = "<group>"; };
+		08AD16692600759800CD5B14 /* alias_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = alias_mosq.c; path = mosquitto/lib/alias_mosq.c; sourceTree = "<group>"; };
+		08AD166A2600759800CD5B14 /* options.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = options.c; path = mosquitto/lib/options.c; sourceTree = "<group>"; };
+		08AD166B2600759800CD5B14 /* packet_datatypes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = packet_datatypes.c; path = mosquitto/lib/packet_datatypes.c; sourceTree = "<group>"; };
+		08AD166C2600759800CD5B14 /* handle_publish.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = handle_publish.c; path = mosquitto/lib/handle_publish.c; sourceTree = "<group>"; };
+		08AD166D2600759800CD5B14 /* misc_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = misc_mosq.c; path = mosquitto/lib/misc_mosq.c; sourceTree = "<group>"; };
+		08AD166E2600759800CD5B14 /* misc_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = misc_mosq.h; path = mosquitto/lib/misc_mosq.h; sourceTree = "<group>"; };
+		08AD166F2600759800CD5B14 /* handle_suback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = handle_suback.c; path = mosquitto/lib/handle_suback.c; sourceTree = "<group>"; };
+		08AD16702600759800CD5B14 /* alias_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = alias_mosq.h; path = mosquitto/lib/alias_mosq.h; sourceTree = "<group>"; };
+		08AD16712600759800CD5B14 /* actions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = actions.c; path = mosquitto/lib/actions.c; sourceTree = "<group>"; };
+		08AD16722600759800CD5B14 /* handle_pubackcomp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = handle_pubackcomp.c; path = mosquitto/lib/handle_pubackcomp.c; sourceTree = "<group>"; };
+		08AD16732600759800CD5B14 /* packet_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = packet_mosq.h; path = mosquitto/lib/packet_mosq.h; sourceTree = "<group>"; };
+		08AD16742600759800CD5B14 /* send_disconnect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = send_disconnect.c; path = mosquitto/lib/send_disconnect.c; sourceTree = "<group>"; };
+		08AD16752600759800CD5B14 /* strings_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = strings_mosq.c; path = mosquitto/lib/strings_mosq.c; sourceTree = "<group>"; };
+		08AD16762600759800CD5B14 /* handle_pubrec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = handle_pubrec.c; path = mosquitto/lib/handle_pubrec.c; sourceTree = "<group>"; };
+		08AD16772600759800CD5B14 /* callbacks.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = callbacks.c; path = mosquitto/lib/callbacks.c; sourceTree = "<group>"; };
+		08AD16782600759800CD5B14 /* handle_disconnect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = handle_disconnect.c; path = mosquitto/lib/handle_disconnect.c; sourceTree = "<group>"; };
+		08AD16792600759800CD5B14 /* packet_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = packet_mosq.c; path = mosquitto/lib/packet_mosq.c; sourceTree = "<group>"; };
+		08AD16A0260075E500CD5B14 /* mosquitto_plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mosquitto_plugin.h; path = mosquitto/include/mosquitto_plugin.h; sourceTree = "<group>"; };
+		08AD16A1260075E500CD5B14 /* mosquitto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mosquitto.h; path = mosquitto/include/mosquitto.h; sourceTree = "<group>"; };
+		08AD16A2260075E500CD5B14 /* mqtt_protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mqtt_protocol.h; path = mosquitto/include/mqtt_protocol.h; sourceTree = "<group>"; };
+		08AD16A3260075E500CD5B14 /* mosquitto_broker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mosquitto_broker.h; path = mosquitto/include/mosquitto_broker.h; sourceTree = "<group>"; };
+		08AD16AA2600760100CD5B14 /* uthash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = uthash.h; path = mosquitto/deps/uthash.h; sourceTree = "<group>"; };
+		08AD16AB2600760100CD5B14 /* utlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utlist.h; path = mosquitto/deps/utlist.h; sourceTree = "<group>"; };
+		08AD16B2260076F700CD5B14 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = mosquitto/config.h; sourceTree = "<group>"; };
 		094821021B0E2EB600099178 /* socks_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = socks_mosq.c; path = mosquitto/lib/socks_mosq.c; sourceTree = "<group>"; };
 		094821031B0E2EB600099178 /* socks_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = socks_mosq.h; path = mosquitto/lib/socks_mosq.h; sourceTree = "<group>"; };
 		09CF6B131A21F78700A97383 /* Moscapsule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Moscapsule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,15 +153,10 @@
 		09CF6B371A21F7E600A97383 /* messages_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = messages_mosq.h; path = mosquitto/lib/messages_mosq.h; sourceTree = "<group>"; };
 		09CF6B381A21F7E600A97383 /* mosquitto_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mosquitto_internal.h; path = mosquitto/lib/mosquitto_internal.h; sourceTree = "<group>"; };
 		09CF6B391A21F7E600A97383 /* mosquitto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mosquitto.c; path = mosquitto/lib/mosquitto.c; sourceTree = "<group>"; };
-		09CF6B3A1A21F7E600A97383 /* mosquitto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mosquitto.h; path = mosquitto/lib/mosquitto.h; sourceTree = "<group>"; };
-		09CF6B3B1A21F7E600A97383 /* mqtt3_protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mqtt3_protocol.h; path = mosquitto/lib/mqtt3_protocol.h; sourceTree = "<group>"; };
 		09CF6B3C1A21F7E600A97383 /* net_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = net_mosq.c; path = mosquitto/lib/net_mosq.c; sourceTree = "<group>"; };
 		09CF6B3D1A21F7E600A97383 /* net_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = net_mosq.h; path = mosquitto/lib/net_mosq.h; sourceTree = "<group>"; };
-		09CF6B3E1A21F7E600A97383 /* read_handle_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = read_handle_client.c; path = mosquitto/lib/read_handle_client.c; sourceTree = "<group>"; };
-		09CF6B3F1A21F7E600A97383 /* read_handle_shared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = read_handle_shared.c; path = mosquitto/lib/read_handle_shared.c; sourceTree = "<group>"; };
 		09CF6B401A21F7E600A97383 /* read_handle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = read_handle.c; path = mosquitto/lib/read_handle.c; sourceTree = "<group>"; };
 		09CF6B411A21F7E600A97383 /* read_handle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = read_handle.h; path = mosquitto/lib/read_handle.h; sourceTree = "<group>"; };
-		09CF6B421A21F7E600A97383 /* send_client_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = send_client_mosq.c; path = mosquitto/lib/send_client_mosq.c; sourceTree = "<group>"; };
 		09CF6B431A21F7E600A97383 /* send_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = send_mosq.c; path = mosquitto/lib/send_mosq.c; sourceTree = "<group>"; };
 		09CF6B441A21F7E600A97383 /* send_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = send_mosq.h; path = mosquitto/lib/send_mosq.h; sourceTree = "<group>"; };
 		09CF6B451A21F7E600A97383 /* srv_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = srv_mosq.c; path = mosquitto/lib/srv_mosq.c; sourceTree = "<group>"; };
@@ -98,7 +169,6 @@
 		09CF6B4C1A21F7E600A97383 /* util_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util_mosq.h; path = mosquitto/lib/util_mosq.h; sourceTree = "<group>"; };
 		09CF6B4D1A21F7E600A97383 /* will_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = will_mosq.c; path = mosquitto/lib/will_mosq.c; sourceTree = "<group>"; };
 		09CF6B4E1A21F7E600A97383 /* will_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = will_mosq.h; path = mosquitto/lib/will_mosq.h; sourceTree = "<group>"; };
-		09CF6B6D1A21F82600A97383 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = Moscapsule/config.h; sourceTree = "<group>"; };
 		09CF6B6F1A21F88000A97383 /* Moscapsule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moscapsule.swift; sourceTree = "<group>"; };
 		09FB79161BB6FA4100B22BAA /* cert.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = cert.bundle; sourceTree = "<group>"; };
 		C7360CC21A2435A8001F490F /* MosquittoCallbackBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MosquittoCallbackBridge.m; sourceTree = "<group>"; };
@@ -125,6 +195,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08AD169E260075AF00CD5B14 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				08AD16A3260075E500CD5B14 /* mosquitto_broker.h */,
+				08AD16A0260075E500CD5B14 /* mosquitto_plugin.h */,
+				08AD16A1260075E500CD5B14 /* mosquitto.h */,
+				08AD16A2260075E500CD5B14 /* mqtt_protocol.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		08AD169F260075D600CD5B14 /* deps */ = {
+			isa = PBXGroup;
+			children = (
+				08AD16AA2600760100CD5B14 /* uthash.h */,
+				08AD16AB2600760100CD5B14 /* utlist.h */,
+			);
+			name = deps;
+			sourceTree = "<group>";
+		};
 		09CF6B091A21F78700A97383 = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +276,9 @@
 		09CF6B2F1A21F7C600A97383 /* mosquitto */ = {
 			isa = PBXGroup;
 			children = (
+				08AD16B2260076F700CD5B14 /* config.h */,
+				08AD169F260075D600CD5B14 /* deps */,
+				08AD169E260075AF00CD5B14 /* include */,
 				09CF6B301A21F7D100A97383 /* lib */,
 			);
 			name = mosquitto;
@@ -194,7 +287,40 @@
 		09CF6B301A21F7D100A97383 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				09CF6B6D1A21F82600A97383 /* config.h */,
+				08AD16712600759800CD5B14 /* actions.c */,
+				08AD16692600759800CD5B14 /* alias_mosq.c */,
+				08AD16702600759800CD5B14 /* alias_mosq.h */,
+				08AD16772600759800CD5B14 /* callbacks.c */,
+				08AD165A2600759800CD5B14 /* connect.c */,
+				08AD16582600759800CD5B14 /* handle_auth.c */,
+				08AD16592600759800CD5B14 /* handle_connack.c */,
+				08AD16782600759800CD5B14 /* handle_disconnect.c */,
+				08AD16642600759800CD5B14 /* handle_ping.c */,
+				08AD16722600759800CD5B14 /* handle_pubackcomp.c */,
+				08AD166C2600759800CD5B14 /* handle_publish.c */,
+				08AD16762600759800CD5B14 /* handle_pubrec.c */,
+				08AD165B2600759800CD5B14 /* handle_pubrel.c */,
+				08AD166F2600759800CD5B14 /* handle_suback.c */,
+				08AD165D2600759800CD5B14 /* handle_unsuback.c */,
+				08AD16612600759800CD5B14 /* helpers.c */,
+				08AD16672600759800CD5B14 /* loop.c */,
+				08AD166D2600759800CD5B14 /* misc_mosq.c */,
+				08AD166E2600759800CD5B14 /* misc_mosq.h */,
+				08AD165F2600759800CD5B14 /* net_mosq_ocsp.c */,
+				08AD166A2600759800CD5B14 /* options.c */,
+				08AD166B2600759800CD5B14 /* packet_datatypes.c */,
+				08AD16792600759800CD5B14 /* packet_mosq.c */,
+				08AD16732600759800CD5B14 /* packet_mosq.h */,
+				08AD16652600759800CD5B14 /* property_mosq.c */,
+				08AD165C2600759800CD5B14 /* property_mosq.h */,
+				08AD16632600759800CD5B14 /* send_connect.c */,
+				08AD16742600759800CD5B14 /* send_disconnect.c */,
+				08AD16622600759800CD5B14 /* send_publish.c */,
+				08AD165E2600759800CD5B14 /* send_subscribe.c */,
+				08AD16662600759800CD5B14 /* send_unsubscribe.c */,
+				08AD16752600759800CD5B14 /* strings_mosq.c */,
+				08AD16682600759800CD5B14 /* utf8_mosq.c */,
+				08AD16602600759800CD5B14 /* util_topic.c */,
 				09CF6B311A21F7E600A97383 /* dummypthread.h */,
 				09CF6B321A21F7E600A97383 /* logging_mosq.c */,
 				09CF6B331A21F7E600A97383 /* logging_mosq.h */,
@@ -204,15 +330,10 @@
 				09CF6B371A21F7E600A97383 /* messages_mosq.h */,
 				09CF6B381A21F7E600A97383 /* mosquitto_internal.h */,
 				09CF6B391A21F7E600A97383 /* mosquitto.c */,
-				09CF6B3A1A21F7E600A97383 /* mosquitto.h */,
-				09CF6B3B1A21F7E600A97383 /* mqtt3_protocol.h */,
 				09CF6B3C1A21F7E600A97383 /* net_mosq.c */,
 				09CF6B3D1A21F7E600A97383 /* net_mosq.h */,
-				09CF6B3E1A21F7E600A97383 /* read_handle_client.c */,
-				09CF6B3F1A21F7E600A97383 /* read_handle_shared.c */,
 				09CF6B401A21F7E600A97383 /* read_handle.c */,
 				09CF6B411A21F7E600A97383 /* read_handle.h */,
-				09CF6B421A21F7E600A97383 /* send_client_mosq.c */,
 				09CF6B431A21F7E600A97383 /* send_mosq.c */,
 				09CF6B441A21F7E600A97383 /* send_mosq.h */,
 				094821021B0E2EB600099178 /* socks_mosq.c */,
@@ -239,18 +360,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				09CF6B191A21F78700A97383 /* Moscapsule.h in Headers */,
-				09CF6B581A21F7E600A97383 /* mosquitto.h in Headers */,
-				09CF6B591A21F7E600A97383 /* mqtt3_protocol.h in Headers */,
 				C7360CC51A243AB9001F490F /* MosquittoCallbackBridge.h in Headers */,
+				08AD16A5260075E500CD5B14 /* mosquitto.h in Headers */,
+				08AD16902600759800CD5B14 /* misc_mosq.h in Headers */,
 				09CF6B4F1A21F7E600A97383 /* dummypthread.h in Headers */,
+				08AD16A6260075E500CD5B14 /* mqtt_protocol.h in Headers */,
 				09CF6B621A21F7E600A97383 /* send_mosq.h in Headers */,
 				09CF6B681A21F7E600A97383 /* tls_mosq.h in Headers */,
-				09CF6B6E1A21F82600A97383 /* config.h in Headers */,
+				08AD16922600759800CD5B14 /* alias_mosq.h in Headers */,
+				08AD167E2600759800CD5B14 /* property_mosq.h in Headers */,
+				08AD16B3260076F700CD5B14 /* config.h in Headers */,
+				08AD16AD2600760100CD5B14 /* utlist.h in Headers */,
+				08AD16A4260075E500CD5B14 /* mosquitto_plugin.h in Headers */,
+				08AD16AC2600760100CD5B14 /* uthash.h in Headers */,
 				09CF6B6A1A21F7E600A97383 /* util_mosq.h in Headers */,
 				09CF6B551A21F7E600A97383 /* messages_mosq.h in Headers */,
 				09CF6B511A21F7E600A97383 /* logging_mosq.h in Headers */,
 				09CF6B561A21F7E600A97383 /* mosquitto_internal.h in Headers */,
 				094821051B0E2EB600099178 /* socks_mosq.h in Headers */,
+				08AD16A7260075E500CD5B14 /* mosquitto_broker.h in Headers */,
+				08AD16952600759800CD5B14 /* packet_mosq.h in Headers */,
 				09CF6B661A21F7E600A97383 /* time_mosq.h in Headers */,
 				09CF6B6C1A21F7E600A97383 /* will_mosq.h in Headers */,
 				09CF6B5F1A21F7E600A97383 /* read_handle.h in Headers */,
@@ -363,24 +492,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09CF6B5D1A21F7E600A97383 /* read_handle_shared.c in Sources */,
+				08AD16912600759800CD5B14 /* handle_suback.c in Sources */,
+				08AD167A2600759800CD5B14 /* handle_auth.c in Sources */,
+				08AD16822600759800CD5B14 /* util_topic.c in Sources */,
+				08AD168A2600759800CD5B14 /* utf8_mosq.c in Sources */,
+				08AD16972600759800CD5B14 /* strings_mosq.c in Sources */,
+				08AD168E2600759800CD5B14 /* handle_publish.c in Sources */,
 				09CF6B651A21F7E600A97383 /* time_mosq.c in Sources */,
+				08AD16892600759800CD5B14 /* loop.c in Sources */,
+				08AD167F2600759800CD5B14 /* handle_unsuback.c in Sources */,
 				09CF6B611A21F7E600A97383 /* send_mosq.c in Sources */,
 				09CF6B6B1A21F7E600A97383 /* will_mosq.c in Sources */,
+				08AD169B2600759800CD5B14 /* packet_mosq.c in Sources */,
+				08AD168C2600759800CD5B14 /* options.c in Sources */,
+				08AD16812600759800CD5B14 /* net_mosq_ocsp.c in Sources */,
+				08AD16962600759800CD5B14 /* send_disconnect.c in Sources */,
 				09CF6B701A21F88000A97383 /* Moscapsule.swift in Sources */,
 				094821041B0E2EB600099178 /* socks_mosq.c in Sources */,
+				08AD168F2600759800CD5B14 /* misc_mosq.c in Sources */,
+				08AD16842600759800CD5B14 /* send_publish.c in Sources */,
+				08AD16982600759800CD5B14 /* handle_pubrec.c in Sources */,
+				08AD16872600759800CD5B14 /* property_mosq.c in Sources */,
+				08AD16852600759800CD5B14 /* send_connect.c in Sources */,
 				09CF6B5A1A21F7E600A97383 /* net_mosq.c in Sources */,
 				09CF6B541A21F7E600A97383 /* messages_mosq.c in Sources */,
 				09CF6B631A21F7E600A97383 /* srv_mosq.c in Sources */,
+				08AD167B2600759800CD5B14 /* handle_connack.c in Sources */,
+				08AD167C2600759800CD5B14 /* connect.c in Sources */,
 				09CF6B571A21F7E600A97383 /* mosquitto.c in Sources */,
 				C7360CC31A2435A8001F490F /* MosquittoCallbackBridge.m in Sources */,
+				08AD16992600759800CD5B14 /* callbacks.c in Sources */,
+				08AD167D2600759800CD5B14 /* handle_pubrel.c in Sources */,
+				08AD16932600759800CD5B14 /* actions.c in Sources */,
+				08AD169A2600759800CD5B14 /* handle_disconnect.c in Sources */,
+				08AD168D2600759800CD5B14 /* packet_datatypes.c in Sources */,
+				08AD16942600759800CD5B14 /* handle_pubackcomp.c in Sources */,
+				08AD16862600759800CD5B14 /* handle_ping.c in Sources */,
 				09CF6B671A21F7E600A97383 /* tls_mosq.c in Sources */,
-				09CF6B601A21F7E600A97383 /* send_client_mosq.c in Sources */,
 				09CF6B521A21F7E600A97383 /* memory_mosq.c in Sources */,
+				08AD16832600759800CD5B14 /* helpers.c in Sources */,
+				08AD168B2600759800CD5B14 /* alias_mosq.c in Sources */,
 				09CF6B5E1A21F7E600A97383 /* read_handle.c in Sources */,
+				08AD16882600759800CD5B14 /* send_unsubscribe.c in Sources */,
 				09CF6B641A21F7E600A97383 /* thread_mosq.c in Sources */,
-				09CF6B5C1A21F7E600A97383 /* read_handle_client.c in Sources */,
 				09CF6B691A21F7E600A97383 /* util_mosq.c in Sources */,
+				08AD16802600759800CD5B14 /* send_subscribe.c in Sources */,
 				09CF6B501A21F7E600A97383 /* logging_mosq.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -259,7 +259,7 @@ public final class MQTTConfig {
     public let keepAlive: Int32
     public let protocolVersion: MQTTProtocol
     public var cleanSession: Bool
-    public var mqttReconnOpts: MQTTReconnOpts?
+    public var mqttReconnOpts: MQTTReconnOpts
     public var mqttWillOpts: MQTTWillOpts?
     public var mqttAuthOpts: MQTTAuthOpts?
     public var mqttPublishOpts: MQTTPublishOpts?
@@ -275,14 +275,14 @@ public final class MQTTConfig {
     public var onSubscribeCallback: ((_ messageId: Int, _ grantedQos: Array<Int32>) -> ())!
     public var onUnsubscribeCallback: ((_ messageId: Int) -> ())!
     
-    public init(clientId: String, host: String, port: Int32, keepAlive: Int32, protocolVersion: MQTTProtocol = .v3_1) {
+    public init(clientId: String, host: String, port: Int32, keepAlive: Int32, mqttReconnOpts: MQTTReconnOpts = .init(delay: 1, max: 60 * 30, exponentialBackoff: true), protocolVersion: MQTTProtocol = .v3_1) {
         self.clientId = clientId
         self.host = host
         self.port = port
         self.keepAlive = keepAlive
         self.protocolVersion = protocolVersion
         self.cleanSession = true
-        mqttReconnOpts = MQTTReconnOpts(delay: 1, max: 60 * 30, exponentialBackoff: true)
+        self.mqttReconnOpts = mqttReconnOpts
     }
 }
 
@@ -320,14 +320,10 @@ public final class MQTT {
         // setup mosquittoHandler
         mosquitto_context_setup(mqttConfig.clientId.cCharArray, mqttConfig.cleanSession, mosquittoContext, protocolVersion)
         // set MQTT Reconnection Options
-		if let options = mqttConfig.mqttReconnOpts {
-			mosquitto_reconnect_delay_set(mosquittoContext.mosquittoHandler,
-										  options.reconnect_delay_s,
-										  options.reconnect_delay_max_s,
-										  options.reconnect_exponential_backoff)
-		} else {
-//			mosquitto_reconnect_disable(mosquittoContext.mosquittoHandler)
-		}
+        mosquitto_reconnect_delay_set(mosquittoContext.mosquittoHandler,
+                                      mqttConfig.mqttReconnOpts.reconnect_delay_s,
+                                      mqttConfig.mqttReconnOpts.reconnect_delay_max_s,
+                                      mqttConfig.mqttReconnOpts.reconnect_exponential_backoff)
 		
         // set MQTT Will Options
         if let mqttWillOpts = mqttConfig.mqttWillOpts {

@@ -18,21 +18,16 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/flightonary/Moscapsule.git", :tag => s.version }
 
-  s.source_files = "Moscapsule/*.{h,m,swift}", "mosquitto/lib/*.{h,c}"
-  s.public_header_files = "Moscapsule/Moscapsule.h", "Moscapsule/MosquittoCallbackBridge.h", "mosquitto/lib/mosquitto.h"
-
-  s.libraries    = "ssl", "crypto"
+  s.source_files = "Moscapsule/*.{h,m,swift}", "mosquitto/lib/*.{h,c}", "mosquitto/*.{h}", "mosquitto/deps/*.{h,c}", "mosquitto/include/*.{h,c}"
+  s.public_header_files = "Moscapsule/Moscapsule.h", "Moscapsule/MosquittoCallbackBridge.h", "mosquitto/include/mosquitto.h"
+  s.dependency 'OpenSSL-Universal', '1.1.180'
+  s.frameworks = "OpenSSL"
   s.requires_arc = true
   s.xcconfig     = {
     'SWIFT_VERSION' => '4.0',
     'OTHER_CFLAGS' => '-DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK',
-    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Headers/Public/OpenSSL-Universal"',
-    'LIBRARY_SEARCH_PATHS' => [
-      '"$(PODS_ROOT)/OpenSSL-Universal/lib-ios"',
-      '"$(PODS_ROOT)/OpenSSL-Universal/ios/lib"'
-    ]
+    'FRAMEWORK_SEARCH_PATHS' =>  [ '"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL"'] ,
+    'HEADER_SEARCH_PATHS' => ['"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL"']
   }
-
-  #s.dependency      "OpenSSL-Universal", "~> 1.0.1.20"  # not working well
 
 end
